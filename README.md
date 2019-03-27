@@ -15,6 +15,9 @@ Vivaldi Essentials is a group of css files that add various features or enhancem
 - autohide addressbar  
 **Note:** do not use `ve_autohide_Addressbar.css` if your address bar is at the bottom. It will not work as intended.
 
+`ve_autohidePanel.css`  
+- autohide panel  
+
 `ve_operaPanel.css`  
 - make the panel appear to merge with the Vivaldi menu icon, similar to Opera's panel  
 

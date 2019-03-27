@@ -1,0 +1,28 @@
+/* this is part of Vivaldi Essentials:
+ * https://github.com/Tiamarth/Vivaldi-Essentials
+ * 
+ * author: Tiamarth
+ * 
+ * - https://github.com/Tiamarth
+ * - http://tiamarth.com/
+ * 
+ */
+/* credit for the below css goes to reddit user /u/d4th , i genuinely barely modified it */
+#panels-container.icons .fullheight {display: flex;}
+#panels-container .fullheight {
+    right: -7px;
+    width: 10px;
+    background-color: transparent;
+}
+#panels-container.right {right:0;}
+#panels-container {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    transition: width 0.25s 0.05s;
+}
+#panels-container:not(:focus-within):not(:hover) {
+    width: 10px !important;
+    transition: width 0.25s 0.5s;
+}
