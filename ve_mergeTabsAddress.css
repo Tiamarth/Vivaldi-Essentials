@@ -10,15 +10,23 @@
 #titlebar {z-index: 1;}
 #main {
     margin-top: -32px;
-    pointer-events: none;
+    pointer-events: none; /* allow clicking in the addressfield even though the element is behind this one */
     background: transparent !important;
 }
 #browser.fullscreen #main {margin-top: 0;}
-.toolbar-addressbar {
-    margin-left: 34px;
-    pointer-events: initial;
+.toolbar-addressbar {pointer-events: initial;}
+.toolbar-addressbar.toolbar:after {display: none;}
+/* in unmaximized windows */
+#browser.normal #tabs-container {margin-right: 28%;}
+#browser.normal .toolbar-addressbar {
+    width: 28%;
+    margin-left: 63%;
 }
-.toolbar-addressbar {width: 452px;}
-#tabs-container {margin-left: 452px;}
-.inner {pointer-events: initial;}
-#browser.tabs-off .toolbar-addressbar,#browser:not(.tabs-top) .toolbar-addressbar {width: initial;}
+/* in maximized windows */
+#browser.maximized #tabs-container {margin-right: 17%;}
+#browser.maximized .toolbar-addressbar {
+    width: 16%;
+    margin-left: 78%;
+}
+.toolbar-extensions {display: none;} /* hide extension buttons since they cause unpredictable rescaling of the addressabar depending on how many buttons exist */
+.inner {pointer-events: initial;} /* allow clicking in the page again after disallowing it in #main */
