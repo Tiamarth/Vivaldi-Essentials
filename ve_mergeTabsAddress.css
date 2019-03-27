@@ -1,0 +1,24 @@
+/* this is part of Vivaldi Essentials:
+ * https://github.com/Tiamarth/Vivaldi-Essentials
+ * 
+ * author: Tiamarth
+ * 
+ * - https://github.com/Tiamarth
+ * - http://tiamarth.com/
+ * 
+ */
+#titlebar {z-index: 1;}
+#main {
+    margin-top: -32px;
+    pointer-events: none;
+    background: transparent !important;
+}
+#browser.fullscreen #main {margin-top: 0;}
+.toolbar-addressbar {
+    margin-left: 34px;
+    pointer-events: initial;
+}
+.toolbar-addressbar {width: 452px;}
+#tabs-container {margin-left: 452px;}
+.inner {pointer-events: initial;}
+#browser.tabs-off .toolbar-addressbar,#browser:not(.tabs-top) .toolbar-addressbar {width: initial;}

@@ -1,0 +1,33 @@
+/* this is part of Vivaldi Essentials:
+ * https://github.com/Tiamarth/Vivaldi-Essentials
+ * 
+ * author: Tiamarth
+ * 
+ * - https://github.com/Tiamarth
+ * - http://tiamarth.com/
+ * 
+ */
+/* autohide addressbar */
+/* move addressbar and bookmarks  to the right */
+.toolbar-addressbar.toolbar,.bookmark-bar {margin-left: 34px;} /* if you use panel toggle, make this 45 */
+/* create illusion of panel merging into address bar by making panel same color as browser background */
+#switch,#panels-container:after {background: var(--colorBg);}
+#panels-container:after {border-right: 1px solid var(--colorBg) !important;}
+/* move panel buttons down just a tad */
+.bookmarks {margin-top: 1px;}
+.bookmark-bar-top .bookmarks {margin-top: -1px;}
+/* everything below this comment is for compatibility with AFV */
+#panel_switch,#switch {box-shadow: inset -1px 0 var(--arcPanel) !important;}
+#panel_switch,#switch,#panels-container:after {background: var(--arcPanel);}
+#panels-container:after {border-right: 1px solid rgba(0,0,0,0.35) !important;}
+#panel_switch polygon,#switch button svg {fill: var(--arcDarkText) !important;}
+#switch button.active svg {fill: var(--colorFg) !important;}
+#switch button.active,
+#switch button.active:hover {
+    background-color: var(--colorBgLightIntense) !important;
+    border: 1px rgba(0,0,0,0.5);
+    border-style: inset none inset none;
+}
+.theme-dark #switch .webviewbtn img,#switch button {background: transparent !important;}
+#panel_switch:hover,#switch button:hover {background: var(--arcDarkButtonHover) !important;}
+#switch button:hover:not(:disabled):not(.active) {box-shadow: initial;}

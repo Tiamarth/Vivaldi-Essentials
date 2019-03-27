@@ -1,0 +1,41 @@
+/* this is part of Vivaldi Essentials:
+ * https://github.com/Tiamarth/Vivaldi-Essentials
+ * 
+ * author: Tiamarth
+ * 
+ * - https://github.com/Tiamarth
+ * - http://tiamarth.com/
+ * 
+ */
+/* autohide addressbar */
+.toolbar-addressbar {
+    visibility: hidden;
+    opacity: 0;
+	height: 0;
+	transition: 0.1s linear !important;
+}
+
+#header:hover ~ #main .toolbar-addressbar,.toolbar-addressbar:hover {
+    visibility: visible;
+    opacity: 1;
+    height: 34px;
+}
+/* if used with the main css, force titlebar to be displayed */
+#browser.tabs-off #header {display: flex !important;}
+#browser:not(.tabs-top) #titlebar #pagetitle,
+#browser:not(.tabs-top).address-bottom #titlebar #pagetitle {
+    display: flex !important;
+}
+#browser:not(.tabs-off).bookmark-bar-top .toolbar-addressbar,
+#browser.tabs-off.bookmark-bar-top .toolbar-addressbar {
+    display: none !important;
+}
+#browser:not(.tabs-top) #main,
+#browser:not(.tabs-top).address-bottom #main {
+    margin-top: 0 !important;
+}
+#browser:not(.tabs-top) .vivaldi,
+#browser:not(.tabs-top).address-bottom .vivaldi {
+    top: -2px !important;
+}
+#browser:not(.tabs-top).address-bottom .toolbar-addressbar {padding: 0 !important;}

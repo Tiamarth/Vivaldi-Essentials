@@ -1,0 +1,88 @@
+/* this is part of Vivaldi Essentials:
+ * https://github.com/Tiamarth/Vivaldi-Essentials
+ * 
+ * author: Tiamarth
+ * 
+ * - https://github.com/Tiamarth
+ * - http://tiamarth.com/
+ * 
+ */
+/* remove vivaldi's header gradient and make splash less obnoxious */
+body {
+    background-color: black !important;
+    --colorAccentBgDark: transparent !important;
+}
+/* add a 1px window border that persists when native window is disabled */
+#browser {
+    padding-top: 0 !important;
+    padding-right: 1px !important;
+    padding-bottom: 1px !important;
+    padding-left: 1px !important;
+}
+#browser.maximized,#browser.fullscreen {padding: 0 !important;}
+#browser.address-off.tabs-off.bookmark-bar-off {padding-top: 1px !important;}
+/* hide title bar when GUI is hidden */
+#browser.minimal-ui.address-off.tabs-off.bookmark-bar-off #header {display: none;}
+/* reduce white space above tabs */
+#tabs-container.top {padding-top: 4px;}
+.normal #tabs-container.top {padding-top: 5px !important;}
+/* reduce white space below tabs when tabs are bottom */
+.normal #tabs-container.bottom {padding-bottom: 5px !important;}
+.stacks-on #tabs-container.bottom {padding-bottom: 3px;}
+/* less obnoxious top border on bottom tabs */
+.address-top #tabs-container.bottom {
+    border-top-width: 1px;
+    border-color: rgba(23,27,35,0.1);
+}
+/* reduce white space between tabs and tab bin */
+.resize {
+    margin-right: -10px;
+    padding-right: 15px;
+}
+#browser:not(.tabs-top) .resize {
+    margin: 0;
+    padding-right: 0;
+}
+.sync-and-trash-container {
+    margin-left: -15px;
+    padding-left: 10px;
+}
+.toggle-trash {
+    margin: auto 10px auto -10px;
+    padding-left: 10px;
+}
+.synced-tabs-button {margin: auto 5px auto -10px;}
+#browser:not(.tabs-top) .toggle-trash {margin: -10px auto auto auto;}
+/* when tabs are not standard, merge address bar with header */
+#browser:not(.tabs-top) #titlebar {z-index: 1;}
+#browser:not(.tabs-top) #titlebar #pagetitle {display: none;}
+#browser:not(.tabs-top) #main {margin-top: -25px;}
+#browser:not(.tabs-top) .toolbar-addressbar {padding: 0 150px 0 35px;}
+#browser:not(.tabs-top) .vivaldi {top: 2px;}
+#browser:not(.tabs-top) .burger-icon {
+    position: relative;
+    top: 3px;
+}
+#browser.address-top.tabs-off .vivaldi {top: 5.5px;}
+/* when tabs are not standard and address bar is bottom, redisplay titlebar and reset address bar margins */
+#browser.address-off.tabs-off #header {display: flex;}
+#browser:not(.tabs-top).address-off #titlebar #pagetitle,
+#browser:not(.tabs-top).address-bottom #titlebar #pagetitle {
+    display: flex;
+}
+#browser:not(.tabs-off).address-off.bookmark-bar-top .toolbar-addressbar,
+#browser.address-off.tabs-off.bookmark-bar-top .toolbar-addressbar {
+    display: none;
+}
+#browser:not(.tabs-top).address-off #main,
+#browser:not(.tabs-top).address-bottom #main {
+    margin-top: 0;
+}
+#browser:not(.tabs-top).address-off .vivaldi,
+#browser:not(.tabs-top).address-bottom .vivaldi {
+    top: -2px;
+}
+#browser:not(.tabs-top).address-bottom .toolbar-addressbar {padding: 0;}
+/* make speed dial navigation smaller */
+.startpage-navigation {min-height: 34px !important;}
+.button-startpage {box-shadow: none !important;}
