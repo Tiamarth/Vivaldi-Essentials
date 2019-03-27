@@ -20,7 +20,7 @@ Vivaldi Essentials is a group of css files that add various features or enhancem
 
 `ve_mergeTabsAddress.css`  
 - merge the address bar with the tab bar  
-**Note:** do not use `ve_mergeTabsAddress.css` with `ve_autohideAddressbar.css`. It will not work as intended.
+**Note:** do not use `ve_mergeTabsAddress.css` with `ve_autohideAddressbar.css`. It will not work as intended. Also, don't use it if your tabs aren't at the top of your browser. `ve_mergeTabsAddress.css` will break if your window gets too small. If your resolution is smaller than mine you may need to adjust the values in the css. Honestly, given all the special circumstances for this particular feature, I may remove it until I can do it with javascript.
 
 
 ## Installation
