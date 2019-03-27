@@ -8,6 +8,7 @@
  * 
  */
 /* credit for the below css goes to reddit user /u/d4th , i genuinely barely modified it */
+#webpage-stack {margin-left: 10px !important;}
 #panels-container.icons .fullheight {display: flex;}
 #panels-container .fullheight {
     right: -7px;
@@ -26,3 +27,4 @@
     width: 10px !important;
     transition: width 0.25s 0.5s;
 }
+#panels-container:after {display: none !important;}
