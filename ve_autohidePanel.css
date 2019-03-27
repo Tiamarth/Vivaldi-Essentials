@@ -9,6 +9,7 @@
  */
 /* credit for the below css goes to reddit user /u/d4th , i genuinely barely modified it */
 #webpage-stack {margin-left: 10px !important;}
+#browser.fullscreen #webpage-stack {margin-left: 0 !important;}
 #panels-container.icons .fullheight {display: flex;}
 #panels-container .fullheight {
     right: -7px;
