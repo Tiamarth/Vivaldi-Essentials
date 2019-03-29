@@ -8,9 +8,7 @@
  *
  */
 /* credit for the below css goes to reddit user /u/d4th , i genuinely barely modified it */
-#panels-container.icons .fullheight {display: flex;}
 #panels-container .fullheight {right: 0;}
-#panels-container.right {right: 0;}
 #panels-container {
     position: absolute;
     z-index: 1;
