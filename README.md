@@ -17,6 +17,7 @@ Vivaldi Essentials is a group of css files that add various features or enhancem
 
 `ve_autohidePanel.css`  
 - autohide panel  
+**Note:** Vivaldi actually has a setting to automatically hide the panel. If you ctrl+click on the panel toggle button in the status bar, it will auto-hide your active panel. However, this css is more minimalist as it also automatically reduces the size of the panel icon strip to provide even more room for content.
 
 `ve_operaPanel.css`  
 - make the panel appear to merge with the Vivaldi menu icon, similar to Opera's panel  
