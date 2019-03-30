@@ -8,6 +8,7 @@
  *
  */
 #panels-container {
+	position: relative;
     z-index: 1;
     transition: width 0.2s;/* the speed at which the panel opens */
 }
@@ -15,5 +16,3 @@
     width: 10px !important;/* the width of the bar you have to hover to reveal the panel */
     transition: width 0.1s;/* the speed at which the panel hides */
 }
-#panels-container:after {display: none !important;}
-.switcher {display: none !important;}
