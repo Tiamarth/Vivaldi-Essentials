@@ -35,22 +35,11 @@ body {
     border-color: rgba(23,27,35,0.1);
 }
 /* reduce white space between tabs and tab bin */
-.resize {
-    margin-right: -10px;
-    padding-right: 15px;
-}
-#browser:not(.tabs-top) .resize {
-    margin: 0;
-    padding-right: 0;
-}
-.sync-and-trash-container {
-    margin-left: -15px;
-    padding-left: 10px;
-}
-.toggle-trash {
-    margin: auto 10px auto -10px;
-    padding-left: 10px;
-}
+.resize {margin-right: -6px;}
+#webpage-stack {margin-right: 0;}
+#browser:not(.tabs-top) .resize {margin: 0;}
+.sync-and-trash-container {margin-left: -15px;}
+.toggle-trash {margin: auto 10px auto -10px;}
 .synced-tabs-button {margin: auto 5px auto -10px;}
 #browser:not(.tabs-top) .toggle-trash {margin: -10px auto auto auto;}
 /* when tabs are not standard, merge address bar with header */
