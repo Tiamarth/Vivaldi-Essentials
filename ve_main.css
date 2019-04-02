@@ -71,3 +71,10 @@ body {
 /* make speed dial navigation smaller */
 .startpage-navigation {min-height: 34px !important;}
 .button-startpage {box-shadow: none !important;}
+/* active tab in windows panel always uses theme highlight color */
+.vivaldi-tree .title.active,
+.vivaldi-tree .tree-row[data-selected],
+.vivaldi-tree .tree-row[data-selected][data-nofocus] {
+    color: var(--colorFg);
+    background: var(--colorAccentBg) !important;
+}
