@@ -68,6 +68,9 @@ body {
     top: -2px;
 }
 #browser:not(.tabs-top).address-bottom .toolbar-addressbar {padding: 0;}
+/* make small black border under address bar more subtle */
+.toolbar-mainbar:after {background-color: rgba(0, 0, 0, 0.16) !important;}
+.theme-dark .toolbar-mainbar:after {background-color: rgba(35, 23, 23, 0.8) !important;}
 /* make speed dial navigation smaller */
 .startpage-navigation {min-height: 34px !important;}
 .button-startpage {box-shadow: none !important;}
