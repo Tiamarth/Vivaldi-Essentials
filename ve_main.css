@@ -9,7 +9,7 @@
  */
 /* remove vivaldi's header gradient and make splash less obnoxious */
 body {
-    background-color: darkgrey !important;
+    background-color: #4e4e4e !important;
     --colorAccentBgDark: transparent !important;
 }
 /* add a 1px window border that persists when native window is disabled */
