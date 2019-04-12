@@ -1,9 +1,7 @@
 # Vivaldi Essentials 
-
 Vivaldi Essentials is a group of css files that add various features or enhancements to Vivaldi's interface. The main css was originally a part of my Vivaldi skin, [AFV](https://github.com/Tiamarth/Arc-for-Vivaldi), but I became of the opinion that they were outside the necessary scope of the skin and decided to move them to their own project. The other css files are random bits of code I wrote either on the forums or on the Vivaldi subreddit to answer other peoples' requests for custom mods or solve other peoples' issues with the interface. I believe all of these changes should be in Vivaldi by default, available as settings to tweak.
 
 ## Features:
-
 `ve_main.css`  
 - add a 1px window border that persists when native window is disabled  
 - reduce amounts of empty, unused space in various places  
@@ -28,7 +26,6 @@ Vivaldi Essentials is a group of css files that add various features or enhancem
 
 
 ## Installation
-
 First, find `style` in your Vivaldi install directory. It should be in the following places depending on your platform:
 
 **Linux:** `/opt/vivaldi/resources/vivaldi/style`  
@@ -45,9 +42,6 @@ For example, if you only wanted to use the main features of this mod, you'd add 
 If you want to use multiple files, just repeat the above for each one. You need to add a line for every file you want to use.
 
 **Need more help?** Get in touch!
-- add me on Discord: Tiamarth#6729
 - join my [Discord server](https://discord.gg/ZfDP2ZV)
 - [Create an issue here on GitHub](https://github.com/Tiamarth/Vivaldi-Essentials/issues/new)
 - [Email me](mailto:jontiamac@gmail.com)
-
-Don't email me unless the other methods fail for some reason. Email is not a great way to contact me.
